@@ -204,13 +204,14 @@ button:hover:before,button:hover:after{
 
 #hover-content {
   position: absolute;
-  display:none;
+  opacity: 0;
   left: -20px;
   margin-top: 30px;
+  transition: 1s ease;
 }
 
 #hover:hover #hover-content {
-    display:block;
+    opacity: 1;
 }
 
 @media (max-width: 960px) {
